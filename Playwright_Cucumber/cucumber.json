@@ -1,0 +1,18 @@
+{
+    "default":{
+        "paths": ["src/test/features/orangeHrmAdmin.feature"],
+        "require": [
+            "src/test/steps/*.ts",
+            "src/hooks/hooks.ts"
+        ],
+        "requireModule": ["ts-node/register"],
+        "formatOptions":{
+            "snippetInterface": "async-await"
+        },
+        "timeout": 60000,
+        "format":[
+            "html:test-result/report/cucumber-report.html",
+            "json:test-result/report/cucumber-report.json"
+        ]
+}
+}
